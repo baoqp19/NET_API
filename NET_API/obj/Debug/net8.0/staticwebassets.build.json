@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "C8OdTOZS5hVduvV3PStJtBnnB1zD1JAHb8bE7ZkHLlE=",
+  "Source": "NET_API",
+  "BasePath": "_content/NET_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
