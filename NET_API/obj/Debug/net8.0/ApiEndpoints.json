@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "NET_API.Controllers.RegionsController",
+    "Method": "getAll",
+    "RelativePath": "api/Regions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_API.Controllers.RegionsController",
+    "Method": "Create",
+    "RelativePath": "api/Regions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addRegionDTO",
+        "Type": "NET_API.Models.DTO.AddRegionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_API.Controllers.RegionsController",
+    "Method": "GetById",
+    "RelativePath": "api/Regions/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NET_API.Controllers.StudentController",
     "Method": "getAllStudent",
     "RelativePath": "api/Student",
