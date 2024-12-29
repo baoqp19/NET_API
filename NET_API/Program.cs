@@ -27,7 +27,7 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationAuthC
 
 builder.Services.AddScoped<IRegionRepository, IMPRegionRepository>();
 builder.Services.AddScoped<IWalkRepository, IMPWalkRepository>();
-
+builder.Services.AddScoped<ITokenRepository, IMPTokenRepository>();
 
 builder.Services.AddAutoMapper(typeof(AutoRegionMapperFrofiles));
 
@@ -47,7 +47,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddIdentityCore<IdentityUser>()
     .AddRoles<IdentityRole>()
-    .AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>("NZWalks")
+    .AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>("NET_API")
     .AddEntityFrameworkStores<DbContextAuth>()
     .AddDefaultTokenProviders();
 

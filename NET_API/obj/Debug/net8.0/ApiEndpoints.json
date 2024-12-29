@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "NET_API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequestDto",
+        "Type": "NET_API.Models.DTO.Auth.LoginRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_API.Controllers.AuthController",
+    "Method": "Registor",
+    "RelativePath": "api/Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addRequestAuthDTO",
+        "Type": "NET_API.Models.DTO.Auth.RegistorRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NET_API.Controllers.RegionsController",
     "Method": "getAll",
     "RelativePath": "api/Regions",
