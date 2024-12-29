@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 using NET_API.DbConnect;
@@ -12,6 +13,7 @@ namespace NET_API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [ValidateModel]
+    [Authorize]
     public class RegionsController : ControllerBase
     {
         private readonly DbConnectApp dbContext;

@@ -20,6 +20,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DbConnectApp>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationConnectString")));
 
+builder.Services.AddDbContext<DbContextAuth>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationAuthConnectString")));
+
+
+
 builder.Services.AddScoped<IRegionRepository, IMPRegionRepository>();
 builder.Services.AddScoped<IWalkRepository, IMPWalkRepository>();
 
