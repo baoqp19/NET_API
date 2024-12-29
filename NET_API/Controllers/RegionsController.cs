@@ -13,12 +13,13 @@ namespace NET_API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [ValidateModel]
-    [Authorize]
+    //[Authorize(Roles = "Reader")]
     public class RegionsController : ControllerBase
     {
         private readonly DbConnectApp dbContext;
         private readonly IRegionRepository regionRepository;
         private readonly IMapper mapper;
+
         public RegionsController(DbConnectApp dbContext, IRegionRepository regionRepository, IMapper mapper)
         { 
             this.dbContext = dbContext;
