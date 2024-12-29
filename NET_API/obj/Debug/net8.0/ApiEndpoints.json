@@ -19,7 +19,7 @@
     "Parameters": [
       {
         "Name": "addRegionDTO",
-        "Type": "NET_API.Models.DTO.AddRegionDTO",
+        "Type": "NET_API.Models.DTO.Region.AddRegionDTO",
         "IsRequired": true
       }
     ],
@@ -42,6 +42,43 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NET_API.Controllers.RegionsController",
+    "Method": "Update",
+    "RelativePath": "api/Regions/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateRegion",
+        "Type": "NET_API.Models.DTO.Region.UpdateRegion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_API.Controllers.RegionsController",
+    "Method": "Delete",
+    "RelativePath": "api/Regions/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NET_API.Controllers.StudentController",
     "Method": "getAllStudent",
     "RelativePath": "api/Student",
@@ -49,6 +86,85 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_API.Controllers.WalkController",
+    "Method": "Create",
+    "RelativePath": "api/Walk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addWalkRequestDto",
+        "Type": "NET_API.Models.DTO.Walk.AddWalkDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_API.Controllers.WalkController",
+    "Method": "GetAll",
+    "RelativePath": "api/Walk",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_API.Controllers.WalkController",
+    "Method": "GetById",
+    "RelativePath": "api/Walk/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_API.Controllers.WalkController",
+    "Method": "Update",
+    "RelativePath": "api/Walk/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateWalkDTO",
+        "Type": "NET_API.Models.DTO.Walk.UpdateWalkDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_API.Controllers.WalkController",
+    "Method": "Delete",
+    "RelativePath": "api/Walk/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

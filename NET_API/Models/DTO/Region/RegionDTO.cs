@@ -1,4 +1,4 @@
-﻿namespace NET_API.Models.DTO
+﻿namespace NET_API.Models.DTO.Region
 {
     public class RegionDTO
     {

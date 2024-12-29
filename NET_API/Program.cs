@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using NET_API.DbConnect;
+using NET_API.Mappings;
+using NET_API.Repositorys;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DbConnectApp>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationConnectString")));
+
+builder.Services.AddScoped<IRegionRepository, IMPRegionRepository>();
+builder.Services.AddScoped<IWalkRepository, IMPWalkRepository>();
+
+
+builder.Services.AddAutoMapper(typeof(AutoRegionMapperFrofiles));
+
 
 var app = builder.Build();
 
